@@ -1,4 +1,3 @@
-![Raspberry Pi RP2040 Embedded System, Retro Game Porting](images/hero.jpg)
 
 The **Raspberry Pi RP2040 Embedded System, Retro Game Porting** board is a compact RP2040-based embedded learning and application platform that combines a color display, handheld controls, motion sensing, infrared communication, audio output, and expansion interfaces for firmware development and retro-style game projects.
 
@@ -87,8 +86,6 @@ To start an application automatically after reset under MicroPython, save the te
 
 ## Board Overview
 
-![Board layout](images/layout.png)
-
 The RP2040 Game Kit places the main processor, handheld user interface, sensors, communication peripherals, and expansion interface on one board. The goal is not to hide the RP2040 behind a finished appliance, but to provide a repeatable embedded-system target where developers can study how several peripherals are coordinated by one application. The board photographs and software mapping should be used together with the schematic because some RP2040 pins are already assigned to onboard functions.
 
 ### Main IC
@@ -141,8 +138,6 @@ USB Type-C is the documented normal power source. A regulator identified in rela
 
 
 ## Hardware Features
-
-![Onboard resources](images/resources.png)
 
 The hardware is organized around interactive embedded-system development rather than a single fixed application. The display, joystick, keys, sensor, infrared circuitry, buzzer, and expansion interface are all accessible through normal RP2040 firmware, making them useful both individually and as parts of a complete program.
 
@@ -212,7 +207,6 @@ A firmware image intended for a similar RP2040 board can still use different LCD
 
 ## Board Dimensions
 
-![Dimensions](images/dimensions.png)
 
 Verified board-outline dimensions were not included in the source material used for this README. Do not calculate mechanical data by scaling product photographs because perspective, enclosure overhang, joystick height, and connector protrusion can produce incorrect values. The final dimensions should come from the PCB CAD files or a controlled mechanical drawing.
 
@@ -224,8 +218,6 @@ Verified board-outline dimensions were not included in the source material used 
 The mechanical drawing should also define keep-out areas around the joystick, buttons, LCD, USB Type-C connector, on/off control if fitted, and expansion connector. These details matter when designing a 3D-printed enclosure or a custom carrier that sits close to the board.
 
 ## Pinout
-
-![Pinout diagram](images/pinout.png)
 
 The onboard mapping below is taken from the documented Game Kit `board.py` configuration. It should be treated as the software/hardware interface for the documented revision and checked against the current schematic when a new production revision is introduced.
 
@@ -258,8 +250,6 @@ Because the LCD, joystick, keys, accelerometer, buzzer, and infrared circuitry c
 
 
 ## Applications
-
-![Applications](images/applications.png)
 
 The board can be used as both an embedded-systems teaching target and a compact interactive controller. The examples below focus on applications supported by the documented peripherals rather than hypothetical features.
 
@@ -298,8 +288,6 @@ External sensors or analog front ends can send data to the board through the exp
 Official product material identifies the Game Kit as a possible control and display platform for electronics-competition projects. External sensors, analog circuits, or control modules can connect through the expansion interface while the built-in LCD, joystick, keys, and buzzer provide the user interface. This can save time when the competition task is focused on algorithms or external circuitry rather than designing another control panel from scratch.
 
 ## Factory Demo
-
-![Factory demo](images/demo.gif)
 
 The board documentation describes the external flash as being loaded with a MicroPython UF2 image, but the exact current production demo has not been established in the supplied material. The reference project contains display examples, input demonstrations, sound code, MMA7660 examples, infrared functions, HID material, snake-style software, and NES-related demonstration resources. These resources show the range of board functions that can be tested, but they should not be presented as one guaranteed shipping demo unless the fulfillment image is fixed and documented.
 
@@ -406,7 +394,6 @@ Serial access may depend on the user's group membership or local device permissi
 
 ## Package Contents
 
-![Package contents](images/package.jpg)
 
 The current source material confirms the main RP2040 Game Kit hardware but does not provide a complete controlled retail packing list. Package contents should be checked against the exact SKU before this section is used for fulfillment.
 
