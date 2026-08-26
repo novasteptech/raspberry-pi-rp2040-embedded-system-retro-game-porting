@@ -1,0 +1,7 @@
+# Internal project files (managed by the app)
+metadata.yaml
+*.crypto_key
+tindie_draft/
+*.bak
+*.bak_*
+*.tmp
